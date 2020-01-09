@@ -1,0 +1,3 @@
+[
+  {"model": "bonds.bonds", "pk": 4, "fields": {"isin": "FR0000131104", "size": 100000000, "currency": "EUR", "maturity": "2025-02-28", "lei": "R0MUWSFPU8MPRO8K5P83", "legal_name": "BNPPARIBAS", "owner": 2}}
+]

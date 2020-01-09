@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Bonds
+
+
+@admin.register(Bonds)
+class BondsAdmin(admin.ModelAdmin):
+    pass
+

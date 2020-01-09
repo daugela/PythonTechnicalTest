@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework'
+    'rest_framework',
+    'users',
+    'bonds'
 ]
 
 MIDDLEWARE = [
@@ -119,3 +121,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# Tweak DRF date format
+REST_FRAMEWORK = {
+    'DATETIME_FORMAT': "%Y-%m-%d",
+}
+
+
+# leirecords API URL
+LEI_LOOKUP_URL = 'https://leilookup.gleif.org/api/v2/leirecords'
