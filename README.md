@@ -1,5 +1,30 @@
 # Origin Markets Backend Test
 
+### Solution
+
+Clone this repo  
+`git clone https://github.com/daugela/PythonTechnicalTest.git && cd PythonTechnicalTest`  
+Inside a virtual environment running Python 3:  
+`pip install -r requirements.txt`  
+
+Make and run migrations:  
+`python origin/manage.py makemigrations`  
+`python origin/manage.py migrate`  
+
+Create user:  
+`python origin/manage.py createsuperuser`  
+
+Run tests:  
+`python origin/manage.py test`  
+
+Run Django development server:  
+`python origin/manage.py runserver 127.0.0.1:8000`  
+
+See shiny new api endpoint (requires basic login):  
+http://127.0.0.1:8000/bonds/  
+
+
+
 ### Spec:
 
 We would like you to implement an api to: ingest some data representing bonds, query an external api for some additional data, store the result, and make the resulting data queryable via api.
